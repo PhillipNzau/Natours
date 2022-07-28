@@ -30,7 +30,17 @@
     color: $color-grey-dark;
 
     &::after {
-      border-color: rgb(196, 11, 11);
+      background-color: $color-white;
+    }
+  }
+
+  &--green {
+    background-color: $color-primary;
+    color: $color-white;
+
+    &::after {
+      background-color: $color-primary;
+
     }
   }
 
