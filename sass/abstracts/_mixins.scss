@@ -12,3 +12,27 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+//MEDIA QUERY MANAGER
+/*
+0-600px:         Phone
+600 - 900px:     Tablet Port 
+900 - 1200px:    Tablet Land 
+1200 - 1800px    where our styles apply
+1800px +:        Big desktop
+*/
+@mixin respond-phone {
+  @media (max-width: 600px) {
+    @content;
+  }
+}
+/*
+$breakpoint argument choices
+- phone
+- tab-port
+- tab-land
+- big-desktop
+*/
+
+@mixin respond($breakpoint) {
+}
