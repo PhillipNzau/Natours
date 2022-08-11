@@ -15,6 +15,10 @@
     padding-left: 7rem;
   }
 
+  @include respond(phone) {
+    transform: translateX(-3rem) skewX(0deg);
+  }
+
   &__shape {
     width: 15rem;
     height: 15rem;
